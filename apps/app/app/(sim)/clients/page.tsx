@@ -1,8 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { useSimStore } from "@/lib/store";
-import { buildLedger, type LedgerEvent } from "@/lib/finance/ledger";
-import { buildDailySchedule } from "@/lib/schedule/daily";
+import { buildLedger, type LedgerEvent } from "@dentalsolutions/core";
 
 type ViewMode = "day" | "week" | "month";
 
@@ -123,7 +123,7 @@ export default function ClientsPage() {
             <div className="mx-auto max-w-[1200px] px-6 py-6">
                 <div className="flex items-center justify-between">
                     <h1 className="text-2xl font-semibold">Client Log</h1>
-                    <a href="/" className="rounded border px-3 py-1 text-sm hover:bg-zinc-50">Back</a>
+                    <Link href="/" className="rounded border px-3 py-1 text-sm hover:bg-zinc-50">Back</Link>
                 </div>
 
                 <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-4">

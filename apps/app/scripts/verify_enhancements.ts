@@ -1,4 +1,4 @@
-import { runSingleSimulation } from "../lib/sim/runSimulation";
+import { runSingleSimulation } from "@dentalsolutions/core";
 import { useSimStore } from "../lib/store";
 
 async function verify() {
@@ -6,6 +6,7 @@ async function verify() {
 
     // Configure for predictable verification
     assumptions.loan = {
+        enabled: true,
         principal: 500000,
         interestRate: 0.10,
         termMonths: 6,
@@ -21,8 +22,8 @@ async function verify() {
     console.log("--- Starting Verification Run ---");
     const result = runSingleSimulation(assumptions);
 
-    console.log(`Initial Loan Balance: ${assumptions.loan.principal}`);
-    console.log(`Loan Repayment (Total/Mo): ${(assumptions.loan.principal * 1.1) / 6}`);
+    console.log(`Initial Loan Balance: ${assumptions.loan!.principal}`);
+    console.log(`Loan Repayment (Total/Mo): ${(assumptions.loan!.principal * 1.1) / 6}`);
 
     result.monthly.forEach((m, idx) => {
         console.log(`Month ${idx + 1}:`);

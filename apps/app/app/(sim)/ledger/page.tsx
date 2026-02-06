@@ -1,7 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { useSimStore } from "@/lib/store";
-import { buildLedger, type LedgerEvent } from "@/lib/finance/ledger";
+import { buildLedger, type LedgerEvent } from "@dentalsolutions/core";
 
 function monthKey(d: Date) {
     return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}`;
@@ -30,14 +31,14 @@ export default function LedgerPage() {
             <div className="mx-auto max-w-6xl px-6 py-6">
                 <div className="flex items-center justify-between">
                     <h1 className="text-2xl font-semibold">Ledger</h1>
-                    <a href="/" className="rounded border px-3 py-1 text-sm hover:bg-zinc-50">Back</a>
+                    <Link href="/" className="rounded border px-3 py-1 text-sm hover:bg-zinc-50">Back</Link>
                 </div>
 
                 <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
                     <div>
                         <div className="text-sm">Month Filter</div>
                         <select className="mt-1 w-full rounded border px-2 py-1" value={filterMonth}
-                            onChange={(e) => setFilterMonth(e.target.value as any)}
+                            onChange={(e) => setFilterMonth(e.target.value)}
                         >
                             <option value="all">All</option>
                             {monthsOptions.map((k) => <option key={k} value={k}>{k}</option>)}

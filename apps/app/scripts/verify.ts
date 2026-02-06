@@ -1,5 +1,5 @@
 
-import { runSingleSimulation } from "../lib/sim/runSimulation";
+import { runSingleSimulation } from "@dentalsolutions/core";
 import { useSimStore } from "../lib/store";
 
 // Use the default assumptions from the store

@@ -15,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -28,6 +28,9 @@
       ],
       "@dentalsolutions/core": [
         "../../packages/core"
+      ],
+      "@dentalsolutions/core/*": [
+        "../../packages/core/*"
       ]
     }
   },

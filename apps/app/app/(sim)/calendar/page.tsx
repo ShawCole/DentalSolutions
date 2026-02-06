@@ -1,8 +1,8 @@
 "use client";
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { useSimStore } from "@/lib/store";
-import { buildDailySchedule } from "@/lib/schedule/daily";
-import { buildLedger } from "@/lib/finance/ledger";
+import { buildDailySchedule, buildLedger } from "@dentalsolutions/core";
 
 export default function CalendarPage() {
     const { assumptions } = useSimStore();
@@ -20,7 +20,7 @@ export default function CalendarPage() {
         for (let d = new Date(start); d <= end; d = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() + 1))) {
             daysAll.push(new Date(d));
         }
-        const dayMap = new Map<string, any>();
+        const dayMap = new Map<string, (typeof days.summaries)[0]>();
         for (const d of days.summaries) {
             dayMap.set(d.date.toISOString().slice(0, 10), d);
         }
@@ -192,7 +192,7 @@ export default function CalendarPage() {
             <div className="mx-auto max-w-6xl px-6 py-6">
                 <div className="flex items-center justify-between">
                     <h1 className="text-2xl font-semibold">Calendar</h1>
-                    <a href="/" className="rounded border px-3 py-1 text-sm hover:bg-zinc-50">Back</a>
+                    <Link href="/" className="rounded border px-3 py-1 text-sm hover:bg-zinc-50">Back</Link>
                 </div>
 
                 <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
@@ -206,7 +206,7 @@ export default function CalendarPage() {
                     </div>
                     <div>
                         <div className="text-sm">Metric</div>
-                        <select className="mt-1 w-full rounded border px-2 py-1" value={metric} onChange={(e) => setMetric(e.target.value as any)}>
+                        <select className="mt-1 w-full rounded border px-2 py-1" value={metric} onChange={(e) => setMetric(e.target.value as "revenue" | "costs" | "net")}>
                             <option value="revenue">Revenue (cash in parens)</option>
                             <option value="costs">Costs</option>
                             <option value="net">Net (cash − costs)</option>
@@ -286,10 +286,10 @@ export default function CalendarPage() {
                                             {/* stage summaries using appointment indices */}
                                             {(() => {
                                                 // count one-and-done completions today
-                                                const oneDone = entries.filter((e: any) => (String(e.packageKey) === "smileDesignNonInvasive" || String(e.packageKey) === "implants1" || String(e.packageKey) === "implants2") && e.apptIndex === e.apptTotal).length;
+                                                const oneDone = entries.filter((e) => (String(e.packageKey) === "smileDesignNonInvasive" || String(e.packageKey) === "implants1" || String(e.packageKey) === "implants2") && e.apptIndex === e.apptTotal).length;
                                                 // multi-visit stage lines
-                                                const byClient = new Map<string, any>();
-                                                entries.forEach((e: any) => { if (e.apptTotal > 1) byClient.set(e.clientId, e); });
+                                                const byClient = new Map<string, (typeof entries)[0]>();
+                                                entries.forEach((e) => { if (e.apptTotal && e.apptTotal > 1) byClient.set(e.clientId || "", e); });
                                                 const stageLines: string[] = [];
                                                 // find next appointment date for client in current month
                                                 const nextDateFor = (clientId: string) => {
@@ -312,7 +312,7 @@ export default function CalendarPage() {
                                             })()}
                                             {/* New Smiles (first appts for Smile Design only) */}
                                             {(() => {
-                                                const count = entries.filter((e: any) => (String(e.packageKey) === "smileDesignNonInvasive" || String(e.packageKey) === "smileDesignInvasive") && e.apptIndex === e.apptTotal).length;
+                                                const count = entries.filter((e) => (String(e.packageKey) === "smileDesignNonInvasive" || String(e.packageKey) === "smileDesignInvasive") && e.apptIndex === e.apptTotal).length;
                                                 if (count <= 0) return null;
                                                 return (
                                                     <span className="absolute bottom-1 right-1 rounded px-1 text-[10px] text-zinc-600 bg-white/80 border">{count} – New Smiles</span>
