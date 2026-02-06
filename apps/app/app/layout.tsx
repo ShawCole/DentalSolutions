@@ -16,6 +16,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "DentalSolutions Business Manager",
   description: "Client, financial, and operations management for DentalSolutions.mx",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
