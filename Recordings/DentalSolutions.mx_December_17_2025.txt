@@ -1,0 +1,270 @@
+In one week, we got like 90 leads. Okay.
+One of those leads, good leads were like 56. Okay.
+
+And I’m driving back and forth, I’m tired, we’re BC. I need to close.
+I need a closer.
+
+So we took like almost two weeks to find the closer, make the campaign, finally got the closer.
+Now we got the closer. It’s a good closer. We should meet him. Good guy.
+
+So, he’s already got, like, a few people almost lined up, right?
+But I think we’re doing really well.
+
+Yeah. The AI, Nicole thinks it needs a little bit more work. Okay.
+But it is working, right?
+
+And we invested $100 a day. So $3,000 in a month. Nice. That’s what we’re doing.
+And we’re hitting all U.S. Yes.
+
+And he’s not, I don’t think he’s profiling. He’s just doing it to the masses. Beautiful.
+So he says it doesn’t matter what leads we get—the AI will kind of filter them out (the no good vs the good), and then the closer will get them here.
+
+⸻
+
+Might if I take a look? Please.
+
+Okay, so you’ve got two campaigns going on right now.
+	•	The American (forget about that in draft).
+	•	This one right here.
+
+Great, so we’ve got four ad sets.
+It says delivery and draft, which means that there’s a couple that haven’t been published.
+
+Go ahead and scroll down… there we go:
+Ad sets for campaign: “Broad 25+ audiences.”
+
+I wonder if that means 25+ age-wise, or 25 different audiences.
+Let’s click on that.
+
+You’ve got two… well, three.
+This one has unpublished edits, but it is active.
+Let’s publish edits.
+
+So there were changes made that haven’t been finalized.
+But looking through this, that is what we have 140 leads from.
+
+How long has this been running for?
+A week. Well, like I said, we started it one week and then we stopped it for like two weeks, and we started it again.
+
+Already paid. Amount spent says $15,000 already.
+$1,000 last time, I don’t know why it says 15. Wow. It was $1,000… I don’t know.
+
+Okay—let’s break down these numbers real quick.
+That’s why I needed to talk to you, really. Jeez, emergency.
+
+Reach: 30,246
+Impressions: 41,754
+
+Impressions vs reach means people saw it more than once.
+Some saw it 3, 4, or 5 times.
+
+Seven-day click… it’s really easy to spend a shitload of money on ads very quickly.
+Facebook wants your money.
+
+It says $15,425.52 spent in the last seven days?
+We paid $12, something already. Got it.
+
+The next bill is gonna come due soon (end of the year).
+
+Now, the worst thing somebody can do with their agency when they first get into something like this is panic and peace out.
+Because the sales cycle just hasn’t caught up yet.
+
+If we get at least one person down here, it’ll cover.
+Two, you’ll be in the green.
+Three will be like, yeah, yeah.
+
+So don’t freak out.
+But I am freaking out.
+
+It might just be the cost of doing business—to get the flow you need.
+If you can break even, keep going.
+But don’t freak out after a week because you haven’t made a sale yet.
+
+That being said: we gotta analyze the fuck out of it.
+
+⸻
+
+(Coffee / watermelon / knife / carajillo conversation)
+
+⸻
+
+Back to the math.
+
+That means the average person saw that video 1.38 times.
+
+Cost per result / lead forms:
+You got 140 lead forms filled out.
+
+So: 140 / 30,246 = 0.46% conversion rate.
+
+At $100 a day, you don’t want to change that when you’re locked in.
+Worst thing you can do is change it.
+
+You paid $110 a lead form…
+But: “Pesos. Pesos.” (clarification)
+
+So it’s not $15,000 USD—it’s pesos.
+
+Roughly: 18.2 pesos per dollar (around $5–$6 per lead).
+US dollar is dropping (18 on the dot, but exchanges won’t give you 18; Wise gives floating rate).
+
+⸻
+
+Creative review notes:
+	•	“Very clean… professional.”
+	•	“Everything looks great, but I would change that logo at the end. It’s hard to read.”
+	•	“Need a thicker border / white bubble.”
+	•	“Easy fix: cut off end of video, keep audio, replace with better logo.”
+	•	“This is called ad optimization.”
+
+⸻
+
+Landing page issues:
+
+Website sucks (as stated).
+Domain situation: dental solutionscare.com (built), dental solutions.mx (owned, not built).
+
+Need to “see it through” until end of January.
+“You built a paper airplane and let it go.”
+
+Landing page: dentalsolutionscare.com/VIP program (go.dentalsolutionscare.com).
+
+Mobile view problem:
+What everyone on mobile sees right now is giving protagonism to the resort, not the clinic.
+
+Needs:
+	1.	Clinic-focused story (not resort).
+	2.	Better clinic video.
+	3.	Page should be an organized journey (not mixed/disorganized).
+	4.	Must position as luxury VIP (not “Tijuana cheap”).
+
+Assets / ownership concern:
+He owns the GoHighLevel assets / pages.
+Pages are loading slow because assets are loaded directly onto the site.
+Some pages show blank previews; not loading due to heavy assets.
+
+He didn’t customize branding/logo much. Disappointing.
+He wants 15% partnership—“This is not how you do business.”
+
+⸻
+
+CRM / pipeline snapshot:
+	•	67 new opportunities not contacted yet
+	•	1 inbound phone call opportunity
+	•	9 opportunities responded to
+	•	7 opportunities requested to start moving
+	•	13 booked consultations
+	•	0 confirmed consultation
+	•	0 shown consultation
+	•	0 ignored / no-show
+	•	0 negotiation
+	•	0 treatment confirmed
+	•	0 procedure done
+	•	25 re-engagement
+	•	27 lost
+	•	0 ghosted / DNC / DNQ
+
+Problem callout:
+Opportunities say “tomorrow” instead of a specific date.
+Example: created Dec 15 at 6pm; note says “tomorrow 10am” but today is Dec 17—so the consult likely already happened.
+Why is it still in “booked consultations”? Was it a no-show? Did anyone follow up?
+
+Need to dig into data to see what John is doing.
+Need weekly check-ins / communication and SOPs.
+
+⸻
+
+Sales process advice:
+
+To stand up closers, you need to have done the sale yourself first.
+Then build SOPs: script, cadence, questions, follow-up process, recording everything.
+If closers don’t have SOPs, they invent their own process (often misaligned).
+
+Recommendation: hire two closers at the same time and have them compete for one role.
+
+⸻
+
+Meta Mexico campaign snapshot:
+
+Since Dec 4 (15 days):
+	•	Reach: ~28,000
+	•	Avg frequency: ~3
+	•	Spend: 4,500 pesos (~$800-ish mentioned)
+	•	121 messaging conversations started
+	•	Messenger: 112
+	•	Instagram: 2
+	•	WhatsApp Business: 7
+	•	6 blocked
+	•	42 replied
+
+Ad issues: “The ad sucks… not enough assets.”
+Before/after not allowed on Facebook; Instagram more lenient.
+
+Optimization phase:
+You’re online, started, have AI, closer, pipeline.
+Not perfect, now optimize.
+
+⸻
+
+Partnership / payment processing concern:
+
+He has you “by the balls” because he owns assets + bank account.
+Strategy: replace assets one at a time so you can remove dependency.
+
+Payment: Patient Preferred / payout routing needs to be controlled by your entity.
+Solution discussed: set up a Wyoming LLC for payment processing, then switch payout account.
+
+Timing:
+	•	LLC + bank account takes a couple weeks for full setup (cost: couple hundred bucks).
+	•	If non-American, EIN approval may take 2–4 months depending on scenario (as discussed).
+
+⸻
+
+Pricing + offer details:
+
+Average case: $9,000
+Will drop to: $6,000
+Absolute lowest: $5,000
+
+Treatment logistics:
+Non-invasive veneers can be a 1–3 day trip.
+Often: come in, procedure, stay night, check next day, then fly back.
+
+Deposit policy:
+Originally 30% (sometimes 39% mentioned), but many refuse to pay upfront.
+Alternative: “No problem—buy ticket, come down, send flight info, we’ll pick you up; pay when here.”
+
+Current stance: no Patient Preferred until payout account is under your control.
+
+Break-even math (minimum $5,000 case):
+	•	Closer commission (10%): $500
+	•	Doctor (20%): $1,000
+	•	Clinic/licensing/insurance est: $500
+Leaves: $3,000 (target take-home / break-even benchmark)
+
+⸻
+
+Closer commission structure (needs clarification in writing):
+	•	0–5 sales: 10% per sale
+	•	6–7 sales: 15% per sale
+	•	8–10 sales: 20% per sale
+
+Critical: clarify whether tier applies per-sale at that point (not retroactive aggregate), and document it.
+Otherwise it’s the difference between ~$7k vs $10k commission on 10 sales at $5k each.
+
+⸻
+
+Positioning strategy:
+
+You’re not selling “veneers.”
+You’re selling a “dental transformation.”
+
+Three paths to success:
+	•	Do it first
+	•	Do it better
+	•	Do it cheaper
+
+Cheaper attracts the clientele you don’t want.
+Better only works if people understand you exist and why you’re better.
+
+Action: kick-ass ads + kick-ass landing page + kick-ass website.

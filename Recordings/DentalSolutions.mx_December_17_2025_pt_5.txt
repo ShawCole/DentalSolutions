@@ -1,0 +1,355 @@
+All right. So what would we say—six documents?
+Fuck.
+
+No, you’re good. They’re all in your Downloads folder.
+
+Right, but what was the name of those?
+Yeah, they’re at the… over there—plus sign. The plus sign.
+
+Hold on, wait, wait, wait. Download. Add one, three, four, one.
+
+Spirit—I don’t know what I heard, but I heard something.
+
+I said, what we’re gonna do is we’re gonna move ahead, get everything arranged, get everything right, and have our little Arab terrorist Chinese…
+
+It’s being recorded. See.
+Okay. Now it’s kind of incriminating.
+
+Oh, it’s not incriminating. And just for posterity.
+I feel as though if somebody were doing a crime, and then they say out loud, “this is incriminating,” that would probably be an unwise thing to say.
+
+But not—exactly. We’re not committing a crime.
+It’s just facetious. You’re being a little deceitious.
+
+I thought it was funny because just imagine:
+Somebody’s like recording themselves committing a crime and they’re like, “hmm, this is criminal activity,” while they’re recording themselves.
+
+I mean, hey—it’s not like it’s never happened before.
+Depends on the crime.
+
+All right, well—if you’re in the U.S., smoking weed would be committing a crime.
+It’s not legal in Quintana Roo, is it?
+
+We’re allowed to consume in-house. It is completely legal.
+Fuck yeah, I love Mexico.
+
+I swear to God: to smoke weed in your house, it’s completely legal.
+And to drink alcohol—thank God.
+
+You’re allowed to drink alcohol. You’re allowed to be intoxicated in your house.
+There you go. Because it is your house.
+
+⸻
+
+All right, so let’s talk about the click-through rate.
+
+So when we’re taking a look at these 121 conversions right here, right?
+These actually ended up becoming messages.
+
+So we’ve got the WhatsApp click rate where we’ve got 121 messages,
+but those are all the Mexican campaign rate.
+
+That was the one we… yeah, because the other one doesn’t go to one.
+Okay. Yeah.
+
+But you said you’re not really getting the best results from that right now at all.
+
+Okay—so what if you routed a U.S. Spanish-speaking audience to that?
+
+I don’t understand.
+
+Instead of whatever audience you’re currently running to that, run a custom Spanish-speaking audience to that.
+Yeah, I can do that right now.
+
+Oh my God, let’s do it.
+
+Okay, so that’s why I added myself to the… perfect.
+
+So that being said, we can run this twice.
+
+So let’s just take a look at this real quick, okay?
+
+We’ve got the 146 leads booked from 30,645 people.
+
+Something’s interesting that I noticed earlier:
+146 leads for 30,645 people… that’s 0.4%.
+
+That’s the exact same conversion rate you have on your Spanish-speaking ad for Mexico.
+That’s crazy. Exact same.
+
+0.004… same.
+
+What does that mean?
+
+That means… that’s Meta algorithmic precision.
+That’s what you can expect from a week-old campaign.
+
+It gets better over time. That’s what they say.
+
+So half of the job of an agency (just like I told you at the beginning) is managing client expectations.
+
+“No, no—don’t freak out. It’s just a week, you’re good. This is what always happens.”
+
+And if they’re a good agency, they’ll let you know ahead of time:
+“Here—look, this is what you’re gonna see. I’m letting you know ahead of time so you don’t freak out.”
+
+When you spend a good amount of money on Facebook, you have to keep that spend.
+You can’t change it.
+
+If you change it, it messes with the algorithm. It has to reset.
+And this is 100% true.
+
+That being said, Meta also has their own fucking thing. It’s called ad fraud—
+meaning 10% of all the ad spend you actually upload never gets used. They take it.
+
+They give you just enough to make you continue to spend.
+
+But here’s the thing:
+It takes like 2–3 weeks for the ads to learn, to mature, to really pick up.
+
+So you gotta stick with it.
+
+So you get quality leads.
+Exactly.
+
+Now, that being said, we need to go through the results of:
+	•	your current campaign for U.S., and
+	•	your current campaign for Mexico.
+
+Yes—because they’ve got the exact same conversion rate, bro. That’s crazy.
+
+And not only that—
+You’ve got (I wrote it down earlier) 140 U.S. leads and 202 Mexican leads. You know that?
+
+Yeah—no idea.
+
+And you spend less on the Mexico.
+Of course.
+
+So again:
+U.S. campaign: 16,183 pesos spent (about 899).
+Mexican campaign: 4,534 pesos spent.
+
+That’s pesos.
+
+This one’s 121 (my bad). 121.
+
+But you also have these that we’re going…
+No, no, those are old.
+
+That says November 13th, 2025.
+You had 45 conversations that got populated.
+
+We sort of think okay with those, but we needed a new campaign.
+
+What I’m saying is:
+We’re gonna take a retargeting—like find everybody that’s ever clicked.
+
+Exactly. Exactly.
+
+But then we can download all of those (just like I asked you to download those) and send them to me.
+And then enrich them and see who we got.
+
+Okay.
+
+So that’s why I sent this over from myself to you.
+
+Now that being said—remind me—was that the American campaign that we sent the data, the CSV file?
+Yeah. That was American. Pretty sure.
+
+Yeah, we just check out the WhatsApp.
+So those were all the CSV files—the one and three and four.
+
+Okay, yeah—that was the American one.
+
+So let’s go ahead…
+
+⸻
+
+Please?
+No.
+
+Were you able to find the files?
+Yeah—here’s the first one.
+
+I’m just gonna go ahead and switch it real quick, see what we get.
+
+I wanted to show you this part.
+
+Okay, so we got:
+	•	Ad ID
+	•	Ad name
+	•	Ad set
+	•	Campaign ID
+
+Okay, hold on. See if I recognize any of these.
+Should be a 64-character code.
+
+Campaign form name… for our records… full email… full name…
+
+Here you go.
+
+I did this, and I’m gonna send this information to you,
+because I tried to get this fucking guy to do it, but like I said—he’s not working.
+
+He’s acting like I owe him my life or something.
+I just didn’t feel right. Did not feel.
+
+Don’t scare him off just yet.
+Yeah, right.
+
+’Cause you can take the power back.
+Of course.
+
+And put him in his place, which is: “Make me money.”
+Exactly. Here’s your money. Go fucking make me money.
+
+At the end of the day, we’re the owners of the clinic.
+
+Yeah—and it’s not just that, man.
+When it comes to deciding who gets the money, of course you fucking do.
+
+Of course you do, right?
+
+You pay him through your bank account—
+not him holding you hostage.
+
+That’s not okay.
+No, no, no. Not at all.
+
+’Cause he’s gonna have me by the balls, of course.
+
+All I have to do is tell Patient Preferred to change that account.
+Yeah, but we gotta get that account first, which means we gotta spend some money.
+
+I’ll be happy. For me, it’s not spending—it’s an investment.
+I’ll be happy to make the investment once I get some money rolling.
+
+So you get just one sale, so it doesn’t go the way you expect it to go?
+Like, in terms of where the payment goes?
+
+Right.
+
+⸻
+
+Shaw, can you put this in the AI?
+What’s up?
+
+That information that you sent me on WhatsApp—
+it’s a very good, thorough search I did.
+
+It took me a little bit, but it got some good information that I think is valuable.
+
+Okay.
+
+I want you to put this in your memory for future use.
+Have you done that in ChatGPT? Tell it: “I want you to put this in your memory.”
+
+Oh yeah. Oh yeah.
+
+You know what’s interesting?
+I filled out my memory a long time ago, and my ChatGPT on mobile thinks I’m who I was a year ago (business operation-wise).
+
+Oh, really?
+
+So I have yet to dive into the data and replace it with what I want it to be,
+because I don’t really use it as much as I use my main account now.
+
+Just the business account that I have at the highest possible level—somebody else was paying for it.
+
+200 bucks?
+
+There is one program I use that’s 100 bucks, another one that’s another 100 bucks.
+Another one that’s Gemini (paying Gemini in Google).
+
+It’s honestly the cheapest, best too.
+
+Also, you have a few “buckies” running.
+Oh yeah.
+
+Dude—here’s the thing: I’ve got several different platforms I use, several different models.
+So I’ve got a good amount of experience with it.
+
+Fuck yeah. Fuck yeah, man.
+
+⸻
+
+All right, but let me just make sure I got everything I needed.
+
+So essentially, in this list, we get:
+	•	phone number
+	•	email
+	•	first name
+
+The rest is the form fill / form information.
+I like the metadata.
+
+So that means we just need to upload:
+	•	first name
+	•	last name
+	•	phone number
+	•	email
+
+So we’ll grab the phone number… where’s the phone number?
+There it is.
+
+And is this a personal email or a business email, or should we just put “email”?
+That’s how this works, right?
+
+So: first name, last name, email, phone number.
+
+⸻
+
+(Background / home / lighting)
+
+About that time, she turned on the lights. Think so.
+Man, look at that—we got dark clouds and crazy…
+
+This is winter, right?
+
+When we got here, the sun was blaring down at the town.
+Nice, huh?
+
+We did get a nice sun glare.
+Yeah, we did.
+
+I don’t think I’m on the place.
+Lights are out.
+
+I know. It’s really a nice home.
+I love it.
+
+Me too, man.
+
+⸻
+
+All right, here we go.
+
+So with your technology, what we’re gonna do…
+Here, I just need to accept.
+
+Get a better audience?
+Yeah, yeah, yeah—exactly.
+
+So essentially, with the Mexican campaign, we’re gonna go ahead—
+
+How much are you spending on that right now?
+Budget 350 pesos daily?
+
+Yeah—keep that running.
+Yeah, we will.
+
+(Leaving / food)
+
+Are you [going to] get some pizza… food?
+Yeah?
+
+I’ll be back. I’ll be back.
+
+Let me get the door for you, honey.
+Thank you. Thank you so much.
+
+It’s pizza.
+
+Are you going to La Fazine?
+Yeah. The four…
