@@ -69,14 +69,14 @@ export function LoginForm({ onSuccess, showSignUp = false }: LoginFormProps) {
 
                     <div>
                         <label className="block text-sm font-medium text-zinc-700 mb-1.5">
-                            Email Address
+                            Username or Email
                         </label>
                         <input
-                            type="email"
+                            type="text"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             className="w-full px-4 py-3 rounded-lg border border-zinc-200 focus:border-zinc-900 focus:ring-1 focus:ring-zinc-900 transition-colors"
-                            placeholder="you@example.com"
+                            placeholder="DentalSolutions"
                             required
                         />
                     </div>

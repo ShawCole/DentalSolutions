@@ -130,11 +130,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
     const signIn = async (email: string, password: string) => {
         // Mock Auth Bypass
-        if (email === "dev@example.com" && password === "password") {
+        if ((email === "dev@example.com" && password === "password") ||
+            (email === "DentalSolutions" && password === "Password123")) {
             const mockUser = {
                 uid: "mock-user-123",
-                email: "dev@example.com",
-                displayName: "Developer",
+                email: email === "DentalSolutions" ? "admin@dentalcancun.com" : "dev@example.com",
+                displayName: email === "DentalSolutions" ? "DentalSolutions Admin" : "Developer",
             };
             localStorage.setItem("mock_session", JSON.stringify(mockUser));
 
