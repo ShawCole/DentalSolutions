@@ -1,0 +1,36 @@
+"use client";
+import React, { useState, useEffect } from "react";
+
+export const Header = ({ forceSolid = false }: { forceSolid?: boolean }) => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        handleScroll(); // Check initial scroll position
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const solid = forceSolid || isScrolled;
+
+    return (
+        <nav className={`fixed top-0 z-50 w-full transition-all duration-500 ${solid ? "bg-white/95 py-4 shadow-lg backdrop-blur-md" : "bg-transparent py-6"}`}>
+            <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
+                <a href="/" className={`text-2xl font-serif font-bold ${solid ? "text-primary" : "text-white"}`}>
+                    DENTAL<span className="text-gold">SOLUTIONS</span>
+                </a>
+                <div className={`hidden space-x-8 md:flex ${solid ? "text-charcoal" : "text-white"}`}>
+                    <a href="/" className="text-sm font-medium hover:text-gold transition-colors">Home</a>
+                    <a href="/stories" className="text-sm font-medium hover:text-gold transition-colors">Success Stories</a>
+                    <a href="/vip" className="text-sm font-medium hover:text-gold transition-colors">VIP Program</a>
+                    <a href="/schedule" className="text-sm font-medium hover:text-gold transition-colors">Prices</a>
+                </div>
+                <a href="/vip" className="rounded-full bg-gold px-6 py-2 text-sm font-semibold text-white hover:bg-primary transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+        </nav>
+    );
+};

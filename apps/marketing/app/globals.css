@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --primary: #001f3f;
+  --secondary: #d4af37;
+  --gold: #c5a059;
+  --charcoal: #333333;
+  --glass: rgba(255, 255, 255, 0.7);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-gold: var(--gold);
+  --color-charcoal: var(--charcoal);
+
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Animations */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slow-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.animate-fade-up {
+  opacity: 0;
+  /* Ensure it starts invisible */
+  animation: fade-up 1s ease-out forwards;
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 20s infinite alternate ease-in-out;
+}
+
+.delay-100 {
+  animation-delay: 0.2s;
+}
+
+.delay-200 {
+  animation-delay: 0.4s;
+}
+
+.delay-300 {
+  animation-delay: 0.6s;
+}
+
+.delay-500 {
+  animation-delay: 1.0s;
+}
