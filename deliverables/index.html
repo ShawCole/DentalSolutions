@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DentalCancun — Deliverables Package | ArkData</title>
+<style>
+  :root {
+    --primary: #0f172a;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --success: #059669;
+    --warning: #d97706;
+    --danger: #dc2626;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #334155;
+    --text-light: #64748b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+  header { background: var(--primary); color: white; padding: 40px 0 32px; }
+  header h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  header p { color: #94a3b8; font-size: 14px; }
+  .badge { display: inline-block; background: var(--accent); color: white; font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-left: 8px; vertical-align: middle; }
+  nav.tabs { background: white; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+  nav.tabs .container { display: flex; gap: 0; overflow-x: auto; }
+  nav.tabs button { background: none; border: none; padding: 14px 20px; font-size: 14px; font-weight: 500; color: var(--text-light); cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; transition: all .15s; }
+  nav.tabs button:hover { color: var(--text); }
+  nav.tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .section { display: none; padding: 32px 0 64px; }
+  .section.active { display: block; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin-bottom: 20px; }
+  .card h2 { font-size: 20px; margin-bottom: 16px; color: var(--primary); }
+  .card h3 { font-size: 16px; margin: 20px 0 10px; color: var(--primary); }
+  .card p, .card li { font-size: 14px; color: var(--text); }
+  .card ul, .card ol { padding-left: 20px; }
+  .card li { margin-bottom: 6px; }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+  .stat { background: var(--accent-light); border-radius: 10px; padding: 20px; text-align: center; }
+  .stat .num { font-size: 28px; font-weight: 700; color: var(--accent); }
+  .stat .label { font-size: 12px; color: var(--text-light); margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 16px 0; }
+  th { background: var(--bg); font-weight: 600; text-align: left; padding: 10px 12px; border-bottom: 2px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 6px; }
+  .tag-green { background: #dcfce7; color: #166534; }
+  .tag-yellow { background: #fef9c3; color: #854d0e; }
+  .tag-red { background: #fee2e2; color: #991b1b; }
+  .tag-blue { background: var(--accent-light); color: #1e40af; }
+  .funnel { display: flex; flex-direction: column; gap: 2px; margin: 20px 0; }
+  .funnel-step { padding: 14px 20px; color: white; font-weight: 600; font-size: 14px; border-radius: 6px; display: flex; justify-content: space-between; }
+  .funnel-step span { font-weight: 400; font-size: 12px; opacity: .85; }
+  .city-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px; margin: 16px 0; }
+  .city-chip { background: var(--bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 13px; }
+  .city-chip strong { color: var(--primary); }
+  .city-chip .code { color: var(--text-light); font-size: 11px; }
+  .highlight-box { background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: 1px solid #bfdbfe; border-radius: 10px; padding: 20px; margin: 20px 0; }
+  .highlight-box h4 { color: var(--accent); margin-bottom: 8px; }
+  .asset-table tr.needs-resize { background: #fffbeb; }
+  .asset-table tr.ready { background: #f0fdf4; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } .stat-grid { grid-template-columns: 1fr 1fr; } }
+  .persona-card { border-left: 4px solid var(--accent); padding-left: 16px; margin: 16px 0; }
+  .persona-card h4 { color: var(--accent); margin-bottom: 4px; }
+  footer { text-align: center; padding: 32px 0; color: var(--text-light); font-size: 12px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Dental Solutions Cancun <span class="badge">Deliverables</span></h1>
+    <p>Prepared by ArkData &mdash; April 2026</p>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="container">
+    <button class="active" onclick="showTab('case-studies')">Case Studies</button>
+    <button onclick="showTab('icp')">ICP</button>
+    <button onclick="showTab('one-pager')">ListMagic One-Pager</button>
+    <button onclick="showTab('audience-map')">Audience Map</button>
+    <button onclick="showTab('asset-audit')">Meta Asset Audit</button>
+  </div>
+</nav>
+
+<!-- ============================================ -->
+<!-- CASE STUDIES -->
+<!-- ============================================ -->
+<div id="case-studies" class="section active">
+  <div class="container">
+
+    <div class="card">
+      <h2>Dental Tourism Ad Case Studies &amp; Best Practices</h2>
+      <p>Research-backed strategies for Meta and Google campaigns targeting US patients for dental tourism in Cancun, Mexico.</p>
+    </div>
+
+    <!-- Market Overview -->
+    <div class="card">
+      <h2>1. Market Overview</h2>
+      <div class="stat-grid">
+        <div class="stat"><div class="num">1M+</div><div class="label">Americans travel abroad for dental care annually (ADA)</div></div>
+        <div class="stat"><div class="num">60-75%</div><div class="label">Cost savings vs. US prices</div></div>
+        <div class="stat"><div class="num">$15K+</div><div class="label">Average patient value per booking</div></div>
+        <div class="stat"><div class="num">40+</div><div class="label">US cities with direct CUN flights</div></div>
+      </div>
+      <h3>Cancun Price Advantage (Key Procedures)</h3>
+      <table>
+        <tr><th>Procedure</th><th>US Price</th><th>Cancun Price</th><th>Savings</th></tr>
+        <tr><td>All-on-4 (per arch)</td><td>$25,000 - $35,000</td><td>$8,500 - $12,000</td><td>~65%</td></tr>
+        <tr><td>Single Implant</td><td>$3,500 - $5,000</td><td>$950 - $1,200</td><td>~73%</td></tr>
+        <tr><td>Porcelain Veneers (per tooth)</td><td>$1,200 - $2,500</td><td>$450</td><td>~75%</td></tr>
+        <tr><td>Composite Veneers (per tooth)</td><td>$600 - $1,200</td><td>$250</td><td>~70%</td></tr>
+      </table>
+      <p>These cost differentials are the #1 driver of dental tourism intent and should be front-and-center in all ad creative.</p>
+    </div>
+
+    <!-- Meta Ads -->
+    <div class="card">
+      <h2>2. Meta (Facebook/Instagram) Ad Strategy</h2>
+
+      <h3>Industry Benchmarks</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="num">$40-80</div><div class="label">Cost per lead (dental Facebook avg)</div></div>
+        <div class="stat"><div class="num">$150-300</div><div class="label">Cost per patient acquisition</div></div>
+        <div class="stat"><div class="num">3-10x</div><div class="label">ROAS for optimized campaigns</div></div>
+        <div class="stat"><div class="num">70%</div><div class="label">Better conversion from retargeting vs cold</div></div>
+      </div>
+
+      <h3>Winning Creative Types (Ranked by Performance)</h3>
+      <ol>
+        <li><strong>Before/After Transformation Ads</strong> &mdash; Real patient photos (even phone-shot) consistently outperform polished alternatives. Authenticity = credibility. Dr. Carolina's existing B/A gallery is ideal source material.</li>
+        <li><strong>Video Testimonials</strong> &mdash; Patient stories combining treatment journey + Cancun vacation experience. The existing michael-new-smile.mp4 testimonial format is exactly what works. Need more in this format.</li>
+        <li><strong>Price Comparison Ads</strong> &mdash; Side-by-side US vs Cancun pricing for specific procedures. Hard numbers drive clicks.</li>
+        <li><strong>Virtual Consultation Offer Ads</strong> &mdash; "Submit your X-ray, get a free treatment plan" lowers the initial commitment barrier dramatically.</li>
+        <li><strong>Destination + Dental Combo</strong> &mdash; Cancun beach/resort imagery paired with clinic shots. "Save $20K on your smile AND get a vacation."</li>
+      </ol>
+
+      <h3>Recommended Funnel Structure</h3>
+      <div class="funnel">
+        <div class="funnel-step" style="background:#2563eb"><strong>TOFU: Awareness</strong> <span>Before/after reels, price comparison carousels, destination content</span></div>
+        <div class="funnel-step" style="background:#3b82f6"><strong>MOFU: Consideration</strong> <span>Video testimonials, Dr. Carolina bio, virtual consult offer</span></div>
+        <div class="funnel-step" style="background:#60a5fa"><strong>BOFU: Conversion</strong> <span>Retargeting w/ financing calculator, limited-time offer, lead form</span></div>
+        <div class="funnel-step" style="background:#93c5fd;color:#1e3a5f"><strong>POST: Referral</strong> <span>Patient UGC, review requests, referral incentives</span></div>
+      </div>
+
+      <h3>Targeting Strategy</h3>
+      <ul>
+        <li><strong>Interest stacking:</strong> Dental implants + Medical tourism + Vacation travel + Mexico travel</li>
+        <li><strong>Lookalike audiences:</strong> Upload existing patient list from GHL &rarr; build 1% lookalike. This is the single highest-ROI audience available.</li>
+        <li><strong>Geo-targeting:</strong> Focus on 40+ US cities with direct CUN flights (see Audience Map tab)</li>
+        <li><strong>Age/Income:</strong> 35-65, household income $75K+ (can afford travel but price-sensitive on dental)</li>
+        <li><strong>Life events:</strong> Recently retired, recently married, milestone birthdays</li>
+        <li><strong>Retargeting pool:</strong> Website visitors (Meta Pixel already installed), video viewers (75%+), lead form openers</li>
+      </ul>
+
+      <h3>Budget Allocation (70/20/10 Rule)</h3>
+      <table>
+        <tr><th>Tier</th><th>% Budget</th><th>Purpose</th><th>Creative</th></tr>
+        <tr><td>Proven Winners</td><td>70%</td><td>Scale what converts</td><td>Best-performing B/A, testimonials</td></tr>
+        <tr><td>Variations</td><td>20%</td><td>Test iterations of winners</td><td>New hooks, angles, formats of top ads</td></tr>
+        <tr><td>Experimental</td><td>10%</td><td>Find new winners</td><td>New concepts, audiences, placements</td></tr>
+      </table>
+
+      <div class="highlight-box">
+        <h4>Key Insight: Gringo Dental Marketing Benchmark</h4>
+        <p>The leading dental tourism lead gen agency (Gringo Dental Marketing) reports: <strong>80% appointment show-up rate</strong>, <strong>$15K+ average patient value</strong>, and <strong>3x ROI</strong> across 172,000+ qualified leads. They use the same Google + Facebook + Instagram trifecta we're recommending. Their success validates this approach for the dental tourism niche specifically.</p>
+      </div>
+    </div>
+
+    <!-- Google Ads -->
+    <div class="card">
+      <h2>3. Google Ads Strategy</h2>
+
+      <h3>Industry Benchmarks</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="num">$5-20+</div><div class="label">CPC for dental keywords</div></div>
+        <div class="stat"><div class="num">5-10%</div><div class="label">Conversion rate benchmark</div></div>
+        <div class="stat"><div class="num">300-500%</div><div class="label">ROI for well-optimized campaigns</div></div>
+        <div class="stat"><div class="num">$175-325</div><div class="label">New patient acquisition cost</div></div>
+      </div>
+
+      <h3>High-Intent Keyword Categories</h3>
+      <table>
+        <tr><th>Category</th><th>Example Keywords</th><th>Intent Level</th></tr>
+        <tr><td>Dental tourism + Mexico</td><td>"dental implants cancun", "veneers in mexico cost", "dentist in cancun for americans"</td><td><span class="tag tag-green">High</span></td></tr>
+        <tr><td>Price comparison</td><td>"affordable dental implants abroad", "cheap veneers mexico", "dental work in mexico reviews"</td><td><span class="tag tag-green">High</span></td></tr>
+        <tr><td>Procedure + cost</td><td>"all on 4 cost", "veneer cost per tooth", "dental implant cost"</td><td><span class="tag tag-yellow">Medium</span></td></tr>
+        <tr><td>Dental tourism general</td><td>"dental tourism", "best country for dental work", "medical tourism dentist"</td><td><span class="tag tag-yellow">Medium</span></td></tr>
+        <tr><td>Insurance/financing</td><td>"dental implants without insurance", "dental financing options"</td><td><span class="tag tag-blue">Research</span></td></tr>
+      </table>
+
+      <h3>Campaign Structure</h3>
+      <ol>
+        <li><strong>Brand Campaign</strong> &mdash; Protect "Dental Solutions Cancun" searches. Low CPC, high conversion.</li>
+        <li><strong>High-Intent Campaign</strong> &mdash; "dental implants cancun", "veneers mexico" etc. Highest ROAS.</li>
+        <li><strong>Competitor Conquest</strong> &mdash; Bid on competing Cancun clinics (Cancun Dental Design, Ocean Dental, etc.)</li>
+        <li><strong>Procedure-Specific</strong> &mdash; Separate ad groups for implants, veneers, All-on-4, smile makeover.</li>
+        <li><strong>Remarketing (RLSA)</strong> &mdash; Layer site visitors onto broader dental keywords for higher bid adjustments.</li>
+      </ol>
+
+      <h3>Landing Page Requirements</h3>
+      <ul>
+        <li>Dedicated LP per procedure (not homepage) &mdash; existing smile-design LP is good, need implants + veneers variants</li>
+        <li>Price transparency (range, not "call for quote")</li>
+        <li>Before/after gallery specific to procedure</li>
+        <li>Trust signals: ADA equivalent credentials, US patient reviews, clinic tour video</li>
+        <li>Embedded financing calculator (already built)</li>
+        <li>Mobile-first &mdash; 70%+ of dental tourism searches are mobile</li>
+      </ul>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="card">
+      <h2>4. DentalCancun-Specific Recommendations</h2>
+
+      <h3>Competitive Advantages to Lead With</h3>
+      <ul>
+        <li><strong>Puerto Cancun location</strong> (NOT Hotel Zone &mdash; upscale, residential, signals quality)</li>
+        <li><strong>Dr. Carolina</strong> &mdash; named doctor builds personal trust vs anonymous clinics</li>
+        <li><strong>Existing video testimonials</strong> &mdash; authentic patient stories already filmed</li>
+        <li><strong>Financing calculator</strong> &mdash; already built, can be embedded in ad LPs</li>
+        <li><strong>GHL pipeline</strong> &mdash; immediate SMS follow-up on leads (speed-to-lead is critical)</li>
+        <li><strong>Concierge services</strong> &mdash; airport transfer, hotel coordination differentiates</li>
+      </ul>
+
+      <h3>Pre-Launch Checklist</h3>
+      <table>
+        <tr><th>Item</th><th>Status</th><th>Action Needed</th></tr>
+        <tr><td>Meta Pixel installed</td><td><span class="tag tag-green">Done</span></td><td>Already on marketing site</td></tr>
+        <tr><td>IDPixel installed</td><td><span class="tag tag-green">Done</span></td><td>Already on marketing site</td></tr>
+        <tr><td>GA4 tracking</td><td><span class="tag tag-yellow">Partial</span></td><td>Only on main site; need on GHL pages too</td></tr>
+        <tr><td>UTM tracking</td><td><span class="tag tag-red">Missing</span></td><td>Need UTM params on all GHL page links</td></tr>
+        <tr><td>A2P consent</td><td><span class="tag tag-green">Done</span></td><td>Twilio approved, checkboxes added</td></tr>
+        <tr><td>GHL SMS follow-up</td><td><span class="tag tag-green">Active</span></td><td>Pipeline is live</td></tr>
+        <tr><td>Patient list for lookalike</td><td><span class="tag tag-red">Needed</span></td><td>Export from GHL for Meta lookalike audience</td></tr>
+        <tr><td>Ad creative (1:1 + 9:16)</td><td><span class="tag tag-yellow">Resize needed</span></td><td>See Meta Asset Audit tab</td></tr>
+      </table>
+
+      <h3>Recommended Launch Budget</h3>
+      <div class="two-col">
+        <div>
+          <h4>Conservative Start ($1,500/mo)</h4>
+          <ul>
+            <li>Meta: $1,000/mo (lead gen focus)</li>
+            <li>Google: $500/mo (high-intent only)</li>
+            <li>Expected: 15-25 qualified leads/mo</li>
+            <li>Expected patients: 3-5/mo at 20% close rate</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Growth Mode ($3,000/mo)</h4>
+          <ul>
+            <li>Meta: $1,800/mo (full funnel)</li>
+            <li>Google: $1,200/mo (expanded keywords)</li>
+            <li>Expected: 35-50 qualified leads/mo</li>
+            <li>Expected patients: 7-10/mo at 20% close rate</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-light)">At $15K avg patient value and $3K/mo spend, even 2 patients/mo = 10x ROAS.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- ICP -->
+<!-- ============================================ -->
+<div id="icp" class="section">
+  <div class="container">
+
+    <div class="card">
+      <h2>Ideal Customer Profile &mdash; Dental Solutions Cancun</h2>
+      <p>US and Canadian residents actively considering dental tourism for cosmetic and restorative procedures.</p>
+    </div>
+
+    <div class="card">
+      <h2>Demographics</h2>
+      <table>
+        <tr><th>Attribute</th><th>Primary</th><th>Secondary</th></tr>
+        <tr><td>Age</td><td>45-60</td><td>35-44 / 61-65</td></tr>
+        <tr><td>Gender</td><td>Skews female 55/45</td><td>Both</td></tr>
+        <tr><td>Location</td><td>US metro areas with direct CUN flights</td><td>Canada (Toronto, Calgary, Vancouver)</td></tr>
+        <tr><td>HH Income</td><td>$75K - $150K</td><td>$50K - $75K (seeking financing)</td></tr>
+        <tr><td>Insurance</td><td>Uninsured or under-insured for dental</td><td>Insured but procedure not covered (cosmetic)</td></tr>
+        <tr><td>Education</td><td>Some college+</td><td>Any</td></tr>
+        <tr><td>Employment</td><td>Professional, self-employed, recently retired</td><td>Remote worker (flexible travel)</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Psychographics</h2>
+      <div class="two-col">
+        <div class="persona-card">
+          <h4>Primary Persona: "Smart Saver Sarah"</h4>
+          <p><strong>Age:</strong> 52 | <strong>Income:</strong> $95K | <strong>Location:</strong> Houston, TX</p>
+          <p>Needs 4+ veneers. US quote was $8,000+. Googled "veneers in Mexico" after a coworker mentioned it. Nervous about quality abroad but price gap is too large to ignore. Needs social proof (reviews, B/A photos) and credential verification to feel safe booking. Has traveled to Cancun before for vacation.</p>
+          <ul>
+            <li>Values: Quality at fair price, safety, transparency</li>
+            <li>Fears: Botched work, language barrier, unsanitary conditions</li>
+            <li>Triggers: US dental quote shock, friend/coworker recommendation, social media B/A post</li>
+          </ul>
+        </div>
+        <div class="persona-card">
+          <h4>Secondary Persona: "Full Restore Frank"</h4>
+          <p><strong>Age:</strong> 58 | <strong>Income:</strong> $120K | <strong>Location:</strong> Dallas, TX</p>
+          <p>Needs All-on-4 or full mouth restoration. US quotes $50K-$70K. Even with insurance, out-of-pocket is $30K+. Researching medical tourism options seriously. Willing to travel but needs to feel confident in the clinic's technology and doctor's credentials. Price is motivator but quality is non-negotiable.</p>
+          <ul>
+            <li>Values: Advanced technology, doctor expertise, comprehensive care</li>
+            <li>Fears: Complications far from home, multi-trip requirements, hidden costs</li>
+            <li>Triggers: Insurance denial letter, retirement approaching, spouse pressure</li>
+          </ul>
+        </div>
+      </div>
+      <div class="two-col" style="margin-top:20px">
+        <div class="persona-card">
+          <h4>Tertiary Persona: "Vacation Vanessa"</h4>
+          <p><strong>Age:</strong> 38 | <strong>Income:</strong> $85K | <strong>Location:</strong> Chicago, IL</p>
+          <p>Wants cosmetic work (whitening, veneers) and sees Cancun dental trip as "beauty vacation." Price-conscious but primarily motivated by the experience &mdash; combine smile makeover with beach trip. Active on Instagram, influenced by transformation content.</p>
+          <ul>
+            <li>Values: Aesthetics, experience, Instagram-worthy results</li>
+            <li>Fears: Looking "fake," pain, recovery time cutting into vacation</li>
+            <li>Triggers: Wedding, milestone birthday, social media transformation post</li>
+          </ul>
+        </div>
+        <div class="persona-card">
+          <h4>Seasonal Persona: "Snowbird Steve"</h4>
+          <p><strong>Age:</strong> 63 | <strong>Income:</strong> $110K | <strong>Location:</strong> Minneapolis, MN</p>
+          <p>Retired or semi-retired. Already winters in Mexico or has traveled there frequently. Dental work is planned and budgeted. Prefers personal relationship with doctor, wants to combine dental appointments with extended stay. High lifetime value &mdash; refers friends.</p>
+          <ul>
+            <li>Values: Relationship, convenience, predictability</li>
+            <li>Fears: Communication gaps, not being able to return easily for follow-ups</li>
+            <li>Triggers: Existing dental issue + upcoming Mexico trip, friend's recommendation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Online Behavior &amp; Intent Signals</h2>
+      <h3>Search Behavior</h3>
+      <ul>
+        <li>Googles: "dental implants cost", "veneers in mexico", "is dental work in mexico safe", "cancun dentist reviews"</li>
+        <li>Visits: Dental tourism review sites, Reddit r/dentaltourism, clinic comparison pages</li>
+        <li>Watches: YouTube patient journey videos, before/after compilations</li>
+        <li>Research cycle: 2-8 weeks from first search to booking</li>
+      </ul>
+      <h3>Social Media Signals</h3>
+      <ul>
+        <li>Follows: Dental clinics in Mexico, medical tourism pages, Cancun travel accounts</li>
+        <li>Engages with: Before/after transformation posts, patient testimonial videos, price comparison content</li>
+        <li>Groups: "Dental Tourism Mexico" Facebook groups (10K-50K members each)</li>
+      </ul>
+      <h3>Intent Tiers for ListMagic Targeting</h3>
+      <table>
+        <tr><th>Tier</th><th>Signal</th><th>Action</th></tr>
+        <tr><td><span class="tag tag-green">High Intent</span></td><td>Searched "dental implants cancun" or "veneers mexico cost" in last 30 days</td><td>Direct ad + SMS outreach</td></tr>
+        <tr><td><span class="tag tag-yellow">Medium Intent</span></td><td>Searched dental procedure costs OR medical tourism in last 60 days</td><td>Awareness ads + email nurture</td></tr>
+        <tr><td><span class="tag tag-blue">Low Intent</span></td><td>Dental-related searches + Cancun/Mexico travel interest overlap</td><td>TOFU content only</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Pain Points &amp; Objection Map</h2>
+      <table>
+        <tr><th>Pain Point</th><th>Severity</th><th>Our Answer</th></tr>
+        <tr><td>US dental costs are unaffordable</td><td><span class="tag tag-red">Critical</span></td><td>60-75% savings with same-quality materials. Transparent pricing on site.</td></tr>
+        <tr><td>Fear of quality/safety abroad</td><td><span class="tag tag-red">Critical</span></td><td>Dr. Carolina credentials, clinic tour video, US patient reviews, before/after gallery</td></tr>
+        <tr><td>Insurance won't cover it anyway</td><td><span class="tag tag-yellow">High</span></td><td>Financing calculator already built. Payment plans available.</td></tr>
+        <tr><td>Language barrier concerns</td><td><span class="tag tag-yellow">High</span></td><td>Bilingual staff, English-speaking Dr. Carolina, US-standard communication</td></tr>
+        <tr><td>Logistics of traveling for dental work</td><td><span class="tag tag-blue">Medium</span></td><td>Concierge service: airport pickup, hotel coordination, follow-up scheduling</td></tr>
+        <tr><td>What if something goes wrong after?</td><td><span class="tag tag-yellow">High</span></td><td>Guarantee/warranty on work, virtual follow-up capability, local referral network</td></tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- ONE-PAGER -->
+<!-- ============================================ -->
+<div id="one-pager" class="section">
+  <div class="container">
+
+    <div class="card" style="border-left:4px solid var(--accent)">
+      <h2>ListMagic for Dental Tourism Patient Acquisition</h2>
+      <p style="font-size:16px;color:var(--text-light)">How intent-based audience building fills your chair with qualified US patients &mdash; before they even see your ad.</p>
+    </div>
+
+    <div class="card">
+      <h2>The Problem</h2>
+      <p>Traditional dental tourism marketing is a guessing game. You run Meta ads to broad audiences and hope someone who needs dental work AND is open to traveling to Mexico sees it. Result: high CPL, low conversion, wasted budget.</p>
+      <h3>Typical Dental Tourism Ad Performance</h3>
+      <div class="stat-grid">
+        <div class="stat"><div class="num">$40-80</div><div class="label">Cost per lead (broad targeting)</div></div>
+        <div class="stat"><div class="num">2-5%</div><div class="label">Lead-to-patient conversion</div></div>
+        <div class="stat"><div class="num">80%+</div><div class="label">Budget wasted on unqualified clicks</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>The ListMagic Solution</h2>
+      <p>ListMagic uses <strong>real-time intent data</strong> to identify Americans who are <em>actively researching</em> dental procedures, dental tourism, and Mexico travel &mdash; right now. Not lookalikes. Not interests. Actual behavioral signals.</p>
+
+      <h3>How It Works for DentalCancun</h3>
+      <table>
+        <tr><th>Step</th><th>What Happens</th><th>Result</th></tr>
+        <tr><td>1. Define ICP</td><td>US adults 35-65, searching dental procedures + Mexico travel, in cities with direct CUN flights</td><td>Precision targeting criteria</td></tr>
+        <tr><td>2. Build Audience</td><td>ListMagic scans intent signals across the web to find people matching these exact behaviors</td><td>Audience of 500-5,000 high-intent prospects</td></tr>
+        <tr><td>3. Activate</td><td>Upload as Meta Custom Audience, Google Customer Match, or direct outreach (email/SMS with consent)</td><td>Ads shown only to people already interested</td></tr>
+        <tr><td>4. Layer</td><td>IDPixel on landing page captures visitor identity for retargeting even without form fill</td><td>2nd-chance conversion on warm visitors</td></tr>
+      </table>
+
+      <h3>Intent Signals We Capture</h3>
+      <ul>
+        <li>Searched "dental implants cost" or "veneers price" in last 30 days</li>
+        <li>Visited dental tourism comparison sites or clinic review pages</li>
+        <li>Searched "Cancun flights" or "Mexico vacation" + dental keywords</li>
+        <li>Visited competitor clinic websites (Cancun Dental Design, Ocean Dental, etc.)</li>
+        <li>Engaged with dental tourism content on social media</li>
+        <li>Searched "dental insurance alternatives" or "dental financing"</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Expected Impact</h2>
+      <div class="two-col">
+        <div>
+          <h3>Without ListMagic</h3>
+          <ul>
+            <li>Broad interest targeting</li>
+            <li>$40-80 cost per lead</li>
+            <li>2-5% lead-to-patient rate</li>
+            <li>$1,600-$4,000 cost per patient</li>
+            <li>No visibility into who visits your site</li>
+          </ul>
+        </div>
+        <div>
+          <h3>With ListMagic + IDPixel</h3>
+          <ul>
+            <li>Behavioral intent targeting</li>
+            <li>$15-35 estimated cost per lead</li>
+            <li>8-15% lead-to-patient rate (pre-qualified)</li>
+            <li>$200-$500 cost per patient</li>
+            <li>IDPixel identifies 20-30% of anonymous visitors</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <h4>ROI Projection</h4>
+        <p>At $15K average patient value and a conservative 3 patients/month from intent-targeted campaigns:<br>
+        <strong>Monthly revenue: $45,000 | Monthly ad spend: $1,500 | ROAS: 30x</strong></p>
+        <p style="margin-top:8px;font-size:13px;color:var(--text-light)">Even at 1 patient/month, the ROI is 10x. The math works at any scale because we're only targeting people already in-market.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>What's Included</h2>
+      <table>
+        <tr><th>Deliverable</th><th>Frequency</th><th>Details</th></tr>
+        <tr><td>Intent-Based Audience Builds</td><td>2x/month</td><td>Fresh audiences of US residents showing dental tourism intent</td></tr>
+        <tr><td>IDPixel Visitor Intelligence</td><td>Continuous</td><td>Identity resolution on anonymous landing page visitors</td></tr>
+        <tr><td>Audience Segmentation</td><td>Per build</td><td>High/Medium/Low intent tiers for funnel-appropriate messaging</td></tr>
+        <tr><td>Geo-Targeting by Flight Route</td><td>Per build</td><td>Focus on 40+ US cities with direct Cancun flights</td></tr>
+        <tr><td>Competitor Visitor Targeting</td><td>Per build</td><td>People who visited competing Cancun dental clinic websites</td></tr>
+        <tr><td>Performance Reporting</td><td>Monthly</td><td>Audience quality metrics, conversion tracking, optimization recs</td></tr>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- AUDIENCE MAP -->
+<!-- ============================================ -->
+<div id="audience-map" class="section">
+  <div class="container">
+
+    <div class="card">
+      <h2>Audience Targeting Map &mdash; US Cities with Direct CUN Flights</h2>
+      <p>Unlike local dental marketing (12mi radius), dental tourism targets <strong>source markets</strong> &mdash; US cities where patients fly from. These 40+ cities all have direct flights to Cancun (CUN).</p>
+    </div>
+
+    <div class="card">
+      <h2>Tier 1: Primary Markets (Highest Volume + Proximity)</h2>
+      <p>Multiple daily flights, 2-3hr flight time, largest patient pools. Allocate 50% of geo-targeted budget here.</p>
+      <div class="city-grid">
+        <div class="city-chip"><strong>Dallas-Fort Worth</strong> <span class="code">DFW</span></div>
+        <div class="city-chip"><strong>Houston IAH</strong> <span class="code">IAH</span></div>
+        <div class="city-chip"><strong>Houston Hobby</strong> <span class="code">HOU</span></div>
+        <div class="city-chip"><strong>Miami</strong> <span class="code">MIA</span></div>
+        <div class="city-chip"><strong>Fort Lauderdale</strong> <span class="code">FLL</span></div>
+        <div class="city-chip"><strong>Atlanta</strong> <span class="code">ATL</span></div>
+        <div class="city-chip"><strong>Chicago O'Hare</strong> <span class="code">ORD</span></div>
+        <div class="city-chip"><strong>New York JFK</strong> <span class="code">JFK</span></div>
+        <div class="city-chip"><strong>Newark</strong> <span class="code">EWR</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tier 2: Strong Markets (Daily Flights, Good Volume)</h2>
+      <p>Daily or near-daily service. Allocate 30% of geo-targeted budget.</p>
+      <div class="city-grid">
+        <div class="city-chip"><strong>Los Angeles</strong> <span class="code">LAX</span></div>
+        <div class="city-chip"><strong>Denver</strong> <span class="code">DEN</span></div>
+        <div class="city-chip"><strong>Charlotte</strong> <span class="code">CLT</span></div>
+        <div class="city-chip"><strong>Orlando</strong> <span class="code">MCO</span></div>
+        <div class="city-chip"><strong>Tampa</strong> <span class="code">TPA</span></div>
+        <div class="city-chip"><strong>Phoenix</strong> <span class="code">PHX</span></div>
+        <div class="city-chip"><strong>Minneapolis</strong> <span class="code">MSP</span></div>
+        <div class="city-chip"><strong>Detroit</strong> <span class="code">DTW</span></div>
+        <div class="city-chip"><strong>Boston</strong> <span class="code">BOS</span></div>
+        <div class="city-chip"><strong>Philadelphia</strong> <span class="code">PHL</span></div>
+        <div class="city-chip"><strong>Washington Dulles</strong> <span class="code">IAD</span></div>
+        <div class="city-chip"><strong>Baltimore</strong> <span class="code">BWI</span></div>
+        <div class="city-chip"><strong>Nashville</strong> <span class="code">BNA</span></div>
+        <div class="city-chip"><strong>Austin</strong> <span class="code">AUS</span></div>
+        <div class="city-chip"><strong>San Antonio</strong> <span class="code">SAT</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Tier 3: Emerging Markets (Seasonal/Weekly Flights)</h2>
+      <p>Good for seasonal campaigns (winter snowbird season Oct-Mar). Allocate 20% of geo-targeted budget.</p>
+      <div class="city-grid">
+        <div class="city-chip"><strong>Chicago Midway</strong> <span class="code">MDW</span></div>
+        <div class="city-chip"><strong>San Francisco</strong> <span class="code">SFO</span></div>
+        <div class="city-chip"><strong>Seattle</strong> <span class="code">SEA</span></div>
+        <div class="city-chip"><strong>Salt Lake City</strong> <span class="code">SLC</span></div>
+        <div class="city-chip"><strong>St. Louis</strong> <span class="code">STL</span></div>
+        <div class="city-chip"><strong>Cleveland</strong> <span class="code">CLE</span></div>
+        <div class="city-chip"><strong>Columbus</strong> <span class="code">CMH</span></div>
+        <div class="city-chip"><strong>Cincinnati</strong> <span class="code">CVG</span></div>
+        <div class="city-chip"><strong>Pittsburgh</strong> <span class="code">PIT</span></div>
+        <div class="city-chip"><strong>Milwaukee</strong> <span class="code">MKE</span></div>
+        <div class="city-chip"><strong>Indianapolis</strong> <span class="code">IND</span></div>
+        <div class="city-chip"><strong>Kansas City</strong> <span class="code">MCI</span></div>
+        <div class="city-chip"><strong>Raleigh-Durham</strong> <span class="code">RDU</span></div>
+        <div class="city-chip"><strong>New Orleans</strong> <span class="code">MSY</span></div>
+        <div class="city-chip"><strong>Hartford</strong> <span class="code">BDL</span></div>
+        <div class="city-chip"><strong>Harlingen</strong> <span class="code">HRL</span></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>ListMagic Audience Build Strategy by Tier</h2>
+      <table>
+        <tr><th>Tier</th><th>Audience Size Target</th><th>Intent Filter</th><th>Refresh Frequency</th></tr>
+        <tr><td>Tier 1 (9 cities)</td><td>2,000 - 5,000</td><td>High + Medium intent</td><td>Bi-weekly</td></tr>
+        <tr><td>Tier 2 (15 cities)</td><td>1,000 - 3,000</td><td>High intent only</td><td>Monthly</td></tr>
+        <tr><td>Tier 3 (16 cities)</td><td>500 - 1,500</td><td>High intent only</td><td>Seasonal (Oct-Mar)</td></tr>
+      </table>
+
+      <div class="highlight-box">
+        <h4>Texas is the #1 Priority Market</h4>
+        <p>DFW, Houston (2 airports), Austin, San Antonio, and Harlingen = 6 direct-flight cities from Texas alone. Texas also has the highest uninsured rate in the US (18%) and the largest population without dental coverage. <strong>Start all pilot campaigns in Texas metros.</strong></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- META ASSET AUDIT -->
+<!-- ============================================ -->
+<div id="asset-audit" class="section">
+  <div class="container">
+
+    <div class="card">
+      <h2>Meta Campaign Asset Audit</h2>
+      <p>All approved assets reviewed for Meta ad placement compatibility. Meta campaigns require <strong>1:1 (1080x1080)</strong> for feed and <strong>9:16 (1080x1920)</strong> for Stories/Reels.</p>
+    </div>
+
+    <div class="card">
+      <h2>Current Asset Inventory</h2>
+      <table class="asset-table">
+        <tr><th>Asset</th><th>Current Size</th><th>Aspect Ratio</th><th>1:1 Ready?</th><th>9:16 Ready?</th><th>Action</th></tr>
+
+        <tr class="ready"><td>hero.png</td><td>1024x1024</td><td>1:1</td><td><span class="tag tag-green">Yes</span></td><td><span class="tag tag-red">No</span></td><td>Crop/extend to 9:16</td></tr>
+        <tr class="ready"><td>concierge.png</td><td>1024x1024</td><td>1:1</td><td><span class="tag tag-green">Yes</span></td><td><span class="tag tag-red">No</span></td><td>Crop/extend to 9:16</td></tr>
+        <tr class="ready"><td>patient.png</td><td>1024x1024</td><td>1:1</td><td><span class="tag tag-green">Yes</span></td><td><span class="tag tag-red">No</span></td><td>Crop/extend to 9:16</td></tr>
+        <tr class="ready"><td>result1.png</td><td>1024x1024</td><td>1:1</td><td><span class="tag tag-green">Yes</span></td><td><span class="tag tag-red">No</span></td><td>Crop/extend to 9:16</td></tr>
+        <tr class="ready"><td>team.png</td><td>1024x1024</td><td>1:1</td><td><span class="tag tag-green">Yes</span></td><td><span class="tag tag-red">No</span></td><td>Crop/extend to 9:16</td></tr>
+
+        <tr class="needs-resize"><td>PHOTO-...-18 2.jpg</td><td>575x1280</td><td>~9:20</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-yellow">Close</span></td><td>Crop to 9:16 (576x1024), upscale to 1080x1920</td></tr>
+        <tr class="needs-resize"><td>PHOTO-...-18 5.jpg</td><td>960x1280</td><td>3:4</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-yellow">Close</span></td><td>Center-crop to 1:1 (960x960) + crop to 9:16</td></tr>
+        <tr class="needs-resize"><td>PHOTO-...-18 3.jpg</td><td>1280x575</td><td>~2.2:1</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-red">No</span></td><td>Too wide for both &mdash; center-crop to 575x575 (1:1)</td></tr>
+        <tr class="needs-resize"><td>PHOTO-...-18 4.jpg</td><td>1280x960</td><td>4:3</td><td><span class="tag tag-yellow">Crop</span></td><td><span class="tag tag-red">No</span></td><td>Center-crop to 960x960 (1:1)</td></tr>
+        <tr class="needs-resize"><td>PHOTO-...-18 6.jpg</td><td>1280x960</td><td>4:3</td><td><span class="tag tag-yellow">Crop</span></td><td><span class="tag tag-red">No</span></td><td>Center-crop to 960x960 (1:1)</td></tr>
+        <tr class="needs-resize"><td>PHOTO-...-18.jpg</td><td>1280x960</td><td>4:3</td><td><span class="tag tag-yellow">Crop</span></td><td><span class="tag tag-red">No</span></td><td>Center-crop to 960x960 (1:1)</td></tr>
+
+        <tr class="needs-resize"><td>building.jpg</td><td>575x1280</td><td>~9:20</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-yellow">Close</span></td><td>Crop to 9:16, upscale</td></tr>
+        <tr class="needs-resize"><td>flag.jpg</td><td>1280x575</td><td>~2.2:1</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-red">No</span></td><td>Too wide &mdash; center-crop to 575x575</td></tr>
+        <tr class="needs-resize"><td>room1.jpg</td><td>1280x960</td><td>4:3</td><td><span class="tag tag-yellow">Crop</span></td><td><span class="tag tag-red">No</span></td><td>Center-crop to 960x960</td></tr>
+        <tr class="needs-resize"><td>room2.jpg</td><td>1280x960</td><td>4:3</td><td><span class="tag tag-yellow">Crop</span></td><td><span class="tag tag-red">No</span></td><td>Center-crop to 960x960</td></tr>
+        <tr class="needs-resize"><td>view.jpg</td><td>960x1280</td><td>3:4</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-yellow">Close</span></td><td>Crop to 1:1 + crop to 9:16</td></tr>
+
+        <tr><td colspan="6" style="font-weight:600;background:#f1f5f9">Video Assets</td></tr>
+        <tr class="ready"><td>michael-new-smile.mp4</td><td>720x1344</td><td>~9:16.8</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-green">~Yes</span></td><td>Slight trim to exact 9:16 (720x1280), upscale to 1080x1920</td></tr>
+
+        <tr><td colspan="6" style="font-weight:600;background:#f1f5f9">Testimonial Thumbnails (720x1280 or 1080x1920)</td></tr>
+        <tr class="ready"><td>anna_*.jpg</td><td>720x1280</td><td>9:16</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-green">Yes</span></td><td>Upscale to 1080x1920 for HD</td></tr>
+        <tr class="ready"><td>david_*.jpg</td><td>1080x1920</td><td>9:16</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-green">Yes</span></td><td>Ready for Stories/Reels</td></tr>
+        <tr class="ready"><td>michael_*.jpg</td><td>720x1344</td><td>~9:16.8</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-yellow">Close</span></td><td>Slight crop to 720x1280, upscale</td></tr>
+        <tr class="ready"><td>sarah_*.jpg</td><td>1080x1920</td><td>9:16</td><td><span class="tag tag-red">No</span></td><td><span class="tag tag-green">Yes</span></td><td>Ready for Stories/Reels</td></tr>
+
+        <tr><td colspan="6" style="font-weight:600;background:#f1f5f9">Logos</td></tr>
+        <tr><td>Logo Stacked</td><td>1149x637</td><td>~16:9</td><td colspan="2"><span class="tag tag-blue">Overlay</span></td><td>Use as overlay on ad creative, not standalone</td></tr>
+        <tr><td>Logo Flat</td><td>1280x233</td><td>~5.5:1</td><td colspan="2"><span class="tag tag-blue">Overlay</span></td><td>Bottom bar overlay on video ads</td></tr>
+        <tr><td>Favicon</td><td>505x494</td><td>~1:1</td><td colspan="2"><span class="tag tag-blue">Profile</span></td><td>Use as page profile image</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Summary &amp; Resize Priority</h2>
+      <div class="stat-grid">
+        <div class="stat"><div class="num">5</div><div class="label">Already 1:1 (1024x1024 PNGs)</div></div>
+        <div class="stat"><div class="num">4</div><div class="label">Already 9:16 or close (testimonials)</div></div>
+        <div class="stat"><div class="num">11</div><div class="label">Need cropping/resizing</div></div>
+        <div class="stat"><div class="num">1</div><div class="label">Video ~ready (slight trim)</div></div>
+      </div>
+
+      <h3>Batch Resize Commands (ImageMagick)</h3>
+      <p style="font-size:13px;color:var(--text-light);margin-bottom:12px">Run these to generate Meta-ready versions. Creates a <code>meta-ready/</code> folder with both formats.</p>
+      <pre style="background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;overflow-x:auto;font-size:12px;line-height:1.7">
+# Create output dirs
+mkdir -p meta-ready/square meta-ready/story
+
+# 1:1 Square (1080x1080) from 1024x1024 PNGs
+for f in hero.png concierge.png patient.png result1.png team.png; do
+  convert "redesign/$f" -resize 1080x1080 "meta-ready/square/$f"
+done
+
+# 1:1 Square from 4:3 photos (center crop)
+for f in "PHOTO-2025-12-17-21-07-18 4.jpg" "PHOTO-2025-12-17-21-07-18 6.jpg" \
+         "PHOTO-2025-12-17-21-07-18.jpg" room1.jpg room2.jpg; do
+  convert "redesign/$f" -gravity center -crop 960x960+0+0 \
+    -resize 1080x1080 "meta-ready/square/$(basename "$f")"
+done
+
+# 9:16 Story (1080x1920) from existing 9:16 thumbnails
+for f in david_3s.jpg david_5s.jpg david_8s.jpg sarah_3s.jpg sarah_5s.jpg sarah_8s.jpg; do
+  cp "redesign/testimonials/thumbs/$f" "meta-ready/story/$f"
+done
+
+# 9:16 from 720x1280 (upscale)
+for f in anna_3s.jpg anna_5s.jpg anna_8s.jpg; do
+  convert "redesign/testimonials/thumbs/$f" -resize 1080x1920 "meta-ready/story/$f"
+done
+      </pre>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>ArkData &bull; ListMagic.ai &bull; Dental Solutions Cancun Deliverables &bull; April 2026</p>
+  </div>
+</footer>
+
+<script>
+function showTab(id) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav.tabs button').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+  window.scrollTo(0, 0);
+}
+</script>
+</body>
+</html>
