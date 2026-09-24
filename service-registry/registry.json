@@ -1,0 +1,1422 @@
+{
+  "client": "dentalcancun",
+  "generated_at": "2026-09-24T06:52:56.040276+00:00",
+  "source_price_list": "client_provided_documents/price_list (April 2026)",
+  "travel_cost_assumption_usd": 900,
+  "aesthetics_skus_pending": true,
+  "notes": "Aesthetics SKUs referenced by Shaw 2026-09-24 are NOT in the April price list and must be added before this registry is complete.",
+  "services": [
+    {
+      "sku_id": "hyg-cleaning",
+      "name": "Dental Cleaning / Prophylaxis",
+      "category": "Preventive",
+      "price_usd": 120,
+      "us_benchmark_usd": {
+        "low": 75,
+        "high": 200,
+        "midpoint": 137.5,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 18,
+      "net_savings_after_travel_usd": -882,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "hyg-deep",
+      "name": "Deep Cleaning / SRP (per quadrant)",
+      "category": "Preventive",
+      "price_usd": 250,
+      "us_benchmark_usd": {
+        "low": 150,
+        "high": 400,
+        "midpoint": 275.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 25,
+      "net_savings_after_travel_usd": -875,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "x4 quadrants typical",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "hyg-perio",
+      "name": "Periodontal Maintenance",
+      "category": "Preventive",
+      "price_usd": 250,
+      "us_benchmark_usd": {
+        "low": 150,
+        "high": 350,
+        "midpoint": 250.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 0,
+      "net_savings_after_travel_usd": -900,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "hyg-debride",
+      "name": "Full Mouth Debridement",
+      "category": "Preventive",
+      "price_usd": 150,
+      "us_benchmark_usd": {
+        "low": 150,
+        "high": 350,
+        "midpoint": 250.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 100,
+      "net_savings_after_travel_usd": -800,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "ven-comp-std",
+      "name": "Composite Veneer (direct, standard)",
+      "category": "Veneers",
+      "price_usd": 250,
+      "us_benchmark_usd": {
+        "low": 400,
+        "high": 1500,
+        "midpoint": 950.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 700,
+      "net_savings_after_travel_usd": -200,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [
+        "/lp/no-prep-veneers"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "ven-comp-cer",
+      "name": "Composite Veneer (ceramic finish)",
+      "category": "Veneers",
+      "price_usd": 328,
+      "us_benchmark_usd": {
+        "low": 500,
+        "high": 1600,
+        "midpoint": 1050.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 722,
+      "net_savings_after_travel_usd": -178,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [
+        "/lp/no-prep-veneers"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "ven-porc",
+      "name": "Porcelain Veneer (indirect)",
+      "category": "Veneers",
+      "price_usd": 450,
+      "us_benchmark_usd": {
+        "low": 900,
+        "high": 2500,
+        "midpoint": 1700.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1250,
+      "net_savings_after_travel_usd": 350,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [
+        "/veneers",
+        "/lp/porcelain-veneers",
+        "/lp/smile-design"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "ven-emax",
+      "name": "Lab Veneer E-max / Zirconia 3D",
+      "category": "Veneers",
+      "price_usd": 490,
+      "us_benchmark_usd": {
+        "low": 1000,
+        "high": 2500,
+        "midpoint": 1750.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1260,
+      "net_savings_after_travel_usd": 360,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [
+        "/veneers",
+        "/lp/smile-design"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "ven-empress",
+      "name": "Empress Esthetic Veneer",
+      "category": "Veneers",
+      "price_usd": 450,
+      "us_benchmark_usd": {
+        "low": 900,
+        "high": 2300,
+        "midpoint": 1600.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1150,
+      "net_savings_after_travel_usd": 250,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [
+        "/veneers"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "cos-bonding",
+      "name": "Cosmetic Bonding",
+      "category": "Cosmetic",
+      "price_usd": 250,
+      "us_benchmark_usd": {
+        "low": 300,
+        "high": 900,
+        "midpoint": 600.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 350,
+      "net_savings_after_travel_usd": -550,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "cos-contour",
+      "name": "Cosmetic Contouring",
+      "category": "Cosmetic",
+      "price_usd": 250,
+      "us_benchmark_usd": {
+        "low": 200,
+        "high": 800,
+        "midpoint": 500.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 250,
+      "net_savings_after_travel_usd": -650,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "cos-whitening",
+      "name": "In-Office Whitening",
+      "category": "Cosmetic",
+      "price_usd": 300,
+      "us_benchmark_usd": {
+        "low": 300,
+        "high": 1000,
+        "midpoint": 650.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 350,
+      "net_savings_after_travel_usd": -550,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "pkg-makeover",
+      "name": "Smile Makeover (~20 teeth)",
+      "category": "Full-Arch Cosmetic",
+      "price_usd": 9397,
+      "us_benchmark_usd": {
+        "low": 20000,
+        "high": 50000,
+        "midpoint": 35000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 25603,
+      "net_savings_after_travel_usd": 24703,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "qty_note": "hero SKU",
+      "collateral_pages": [
+        "/smile-makeover",
+        "/lp/smile-design",
+        "/lp/vip-experience",
+        "/vip"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 30,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "crn-porc",
+      "name": "Porcelain / Zirconia Crown",
+      "category": "Crowns & Bridges",
+      "price_usd": 465,
+      "us_benchmark_usd": {
+        "low": 1000,
+        "high": 2500,
+        "midpoint": 1750.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1285,
+      "net_savings_after_travel_usd": 385,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per unit",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "crn-bruxzir",
+      "name": "Zirconia Crown / BruxZir",
+      "category": "Crowns & Bridges",
+      "price_usd": 679,
+      "us_benchmark_usd": {
+        "low": 1200,
+        "high": 2800,
+        "midpoint": 2000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1321,
+      "net_savings_after_travel_usd": 421,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per unit",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "crn-emax",
+      "name": "E-Max / Empress Crown",
+      "category": "Crowns & Bridges",
+      "price_usd": 679,
+      "us_benchmark_usd": {
+        "low": 1200,
+        "high": 2800,
+        "midpoint": 2000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1321,
+      "net_savings_after_travel_usd": 421,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per unit",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "crn-pfm",
+      "name": "PFM Crown",
+      "category": "Crowns & Bridges",
+      "price_usd": 450,
+      "us_benchmark_usd": {
+        "low": 800,
+        "high": 1500,
+        "midpoint": 1150.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 700,
+      "net_savings_after_travel_usd": -200,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per unit",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "crn-bridge",
+      "name": "Fixed Bridge (per unit)",
+      "category": "Crowns & Bridges",
+      "price_usd": 700,
+      "us_benchmark_usd": {
+        "low": 1000,
+        "high": 2500,
+        "midpoint": 1750.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1050,
+      "net_savings_after_travel_usd": 150,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "3-unit typical",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "crn-post",
+      "name": "Post & Core Build-Up",
+      "category": "Crowns & Bridges",
+      "price_usd": 150,
+      "us_benchmark_usd": {
+        "low": 250,
+        "high": 600,
+        "midpoint": 425.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 275,
+      "net_savings_after_travel_usd": -625,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "end-cracked",
+      "name": "Cracked Tooth (root canal + crown)",
+      "category": "Endodontics",
+      "price_usd": 900,
+      "us_benchmark_usd": {
+        "low": 2000,
+        "high": 4000,
+        "midpoint": 3000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 2100,
+      "net_savings_after_travel_usd": 1200,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "end-ant",
+      "name": "Root Canal - Anterior/Premolar",
+      "category": "Endodontics",
+      "price_usd": 300,
+      "us_benchmark_usd": {
+        "low": 700,
+        "high": 1100,
+        "midpoint": 900.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 600,
+      "net_savings_after_travel_usd": -300,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "end-molar",
+      "name": "Root Canal - Molar",
+      "category": "Endodontics",
+      "price_usd": 550,
+      "us_benchmark_usd": {
+        "low": 1000,
+        "high": 1800,
+        "midpoint": 1400.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 850,
+      "net_savings_after_travel_usd": -50,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "end-std",
+      "name": "Root Canal Therapy (standard)",
+      "category": "Endodontics",
+      "price_usd": 350,
+      "us_benchmark_usd": {
+        "low": 800,
+        "high": 1400,
+        "midpoint": 1100.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 750,
+      "net_savings_after_travel_usd": -150,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "end-retx",
+      "name": "Root Canal Retreatment",
+      "category": "Endodontics",
+      "price_usd": 400,
+      "us_benchmark_usd": {
+        "low": 900,
+        "high": 1600,
+        "midpoint": 1250.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 850,
+      "net_savings_after_travel_usd": -50,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "imp-single",
+      "name": "Single Dental Implant (+crown/abutment)",
+      "category": "Implants",
+      "price_usd": 1744,
+      "us_benchmark_usd": {
+        "low": 3000,
+        "high": 6000,
+        "midpoint": 4500.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 2756,
+      "net_savings_after_travel_usd": 1856,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "qty_note": "per tooth",
+      "collateral_pages": [
+        "/implants"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 60,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "imp-aof",
+      "name": "All-on-4 (per arch)",
+      "category": "Implants",
+      "price_usd": 12500,
+      "us_benchmark_usd": {
+        "low": 20000,
+        "high": 30000,
+        "midpoint": 25000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 12500,
+      "net_savings_after_travel_usd": 11600,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "qty_note": "hero SKU",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 30,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "imp-ball",
+      "name": "Ball Attachment Denture (2-implant overdenture)",
+      "category": "Implants",
+      "price_usd": 3500,
+      "us_benchmark_usd": {
+        "low": 6000,
+        "high": 12000,
+        "midpoint": 9000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 5500,
+      "net_savings_after_travel_usd": 4600,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "qty_note": "per arch",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 60,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "imp-snap",
+      "name": "Snap-on Denture w/ 4 Implants",
+      "category": "Implants",
+      "price_usd": 5300,
+      "us_benchmark_usd": {
+        "low": 10000,
+        "high": 20000,
+        "midpoint": 15000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 9700,
+      "net_savings_after_travel_usd": 8800,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "qty_note": "per arch",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 30,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "sur-ext",
+      "name": "Tooth Extraction - Simple",
+      "category": "Oral Surgery",
+      "price_usd": 75,
+      "us_benchmark_usd": {
+        "low": 150,
+        "high": 350,
+        "midpoint": 250.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 175,
+      "net_savings_after_travel_usd": -725,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "sur-surg",
+      "name": "Extraction - Surgical / Wisdom",
+      "category": "Oral Surgery",
+      "price_usd": 350,
+      "us_benchmark_usd": {
+        "low": 250,
+        "high": 600,
+        "midpoint": 425.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 75,
+      "net_savings_after_travel_usd": -825,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "sur-graft",
+      "name": "Bone Graft (small area)",
+      "category": "Oral Surgery",
+      "price_usd": 737,
+      "us_benchmark_usd": {
+        "low": 600,
+        "high": 1200,
+        "midpoint": 900.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 163,
+      "net_savings_after_travel_usd": -737,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "sur-sinus",
+      "name": "Sinus Lift (per side)",
+      "category": "Oral Surgery",
+      "price_usd": 1300,
+      "us_benchmark_usd": {
+        "low": 1500,
+        "high": 3000,
+        "midpoint": 2250.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 950,
+      "net_savings_after_travel_usd": 50,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "sur-lengthen",
+      "name": "Crown Lengthening",
+      "category": "Oral Surgery",
+      "price_usd": 250,
+      "us_benchmark_usd": {
+        "low": 1000,
+        "high": 3000,
+        "midpoint": 2000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1750,
+      "net_savings_after_travel_usd": 850,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per tooth",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "den-complete",
+      "name": "Removable Complete Denture",
+      "category": "Dentures",
+      "price_usd": 801,
+      "us_benchmark_usd": {
+        "low": 1500,
+        "high": 3000,
+        "midpoint": 2250.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1449,
+      "net_savings_after_travel_usd": 549,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per arch",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "den-premium",
+      "name": "Premium Complete Acrylic Denture",
+      "category": "Dentures",
+      "price_usd": 1573,
+      "us_benchmark_usd": {
+        "low": 2000,
+        "high": 4000,
+        "midpoint": 3000.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 1427,
+      "net_savings_after_travel_usd": 527,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": "per arch",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "den-immediate",
+      "name": "Immediate / Temporary Denture",
+      "category": "Dentures",
+      "price_usd": 600,
+      "us_benchmark_usd": {
+        "low": 1000,
+        "high": 2000,
+        "midpoint": 1500.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 900,
+      "net_savings_after_travel_usd": 0,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "den-repair",
+      "name": "Denture Repair / Reline",
+      "category": "Dentures",
+      "price_usd": 200,
+      "us_benchmark_usd": {
+        "low": 300,
+        "high": 800,
+        "midpoint": 550.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 350,
+      "net_savings_after_travel_usd": -550,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "adj-nightguard",
+      "name": "Night Guard for Bruxism / TMD",
+      "category": "Adjunct",
+      "price_usd": 100,
+      "us_benchmark_usd": {
+        "low": 300,
+        "high": 800,
+        "midpoint": 550.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 450,
+      "net_savings_after_travel_usd": -450,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    },
+    {
+      "sku_id": "adj-sedation",
+      "name": "IV Sedation (per session)",
+      "category": "Adjunct",
+      "price_usd": 98,
+      "us_benchmark_usd": {
+        "low": 500,
+        "high": 1000,
+        "midpoint": 750.0,
+        "basis": "estimated US national average"
+      },
+      "gross_savings_usd": 652,
+      "net_savings_after_travel_usd": -248,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "qty_note": null,
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": [],
+      "last_creative_refresh": null,
+      "refresh_status": "no-creative"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "case-makeover",
+      "label": "Smile Makeover (~20 teeth)",
+      "components": [
+        {
+          "sku": "pkg-makeover",
+          "qty": 1,
+          "name": "Smile Makeover (~20 teeth)"
+        }
+      ],
+      "our_price_usd": 9397,
+      "us_case_midpoint_usd": 35000.0,
+      "net_savings_after_travel_usd": 24703,
+      "savings_pct": 73,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [
+        "/lp/smile-design",
+        "/lp/vip-experience",
+        "/smile-makeover",
+        "/vip"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-aof-double",
+      "label": "All-on-4, Both Arches (full mouth)",
+      "components": [
+        {
+          "sku": "imp-aof",
+          "qty": 2,
+          "name": "All-on-4 (per arch)"
+        }
+      ],
+      "our_price_usd": 25000,
+      "us_case_midpoint_usd": 50000.0,
+      "net_savings_after_travel_usd": 24100,
+      "savings_pct": 50,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-veneer-10-emax",
+      "label": "10-Tooth E-max/Zirconia Veneer Case",
+      "components": [
+        {
+          "sku": "ven-emax",
+          "qty": 10,
+          "name": "Lab Veneer E-max / Zirconia 3D"
+        }
+      ],
+      "our_price_usd": 4900,
+      "us_case_midpoint_usd": 17500.0,
+      "net_savings_after_travel_usd": 11700,
+      "savings_pct": 72,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [
+        "/lp/smile-design",
+        "/veneers"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-aof-single",
+      "label": "All-on-4, Single Arch",
+      "components": [
+        {
+          "sku": "imp-aof",
+          "qty": 1,
+          "name": "All-on-4 (per arch)"
+        }
+      ],
+      "our_price_usd": 12500,
+      "us_case_midpoint_usd": 25000.0,
+      "net_savings_after_travel_usd": 11600,
+      "savings_pct": 50,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-veneer-8-porc",
+      "label": "8-Tooth Porcelain Veneer Case",
+      "components": [
+        {
+          "sku": "ven-porc",
+          "qty": 8,
+          "name": "Porcelain Veneer (indirect)"
+        }
+      ],
+      "our_price_usd": 3600,
+      "us_case_midpoint_usd": 13600.0,
+      "net_savings_after_travel_usd": 9100,
+      "savings_pct": 74,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [
+        "/lp/porcelain-veneers",
+        "/lp/smile-design",
+        "/veneers"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-snap",
+      "label": "Snap-on Denture, 4 Implants (per arch)",
+      "components": [
+        {
+          "sku": "imp-snap",
+          "qty": 1,
+          "name": "Snap-on Denture w/ 4 Implants"
+        }
+      ],
+      "our_price_usd": 5300,
+      "us_case_midpoint_usd": 15000.0,
+      "net_savings_after_travel_usd": 8800,
+      "savings_pct": 65,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-implant-3",
+      "label": "3 Single Implants",
+      "components": [
+        {
+          "sku": "imp-single",
+          "qty": 3,
+          "name": "Single Dental Implant (+crown/abutment)"
+        }
+      ],
+      "our_price_usd": 5232,
+      "us_case_midpoint_usd": 13500.0,
+      "net_savings_after_travel_usd": 7368,
+      "savings_pct": 61,
+      "campaign_tier": 1,
+      "tier_label": "Anchor - lead US acquisition",
+      "collateral_pages": [
+        "/implants"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 30,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-overdenture",
+      "label": "2-Implant Overdenture (lower)",
+      "components": [
+        {
+          "sku": "imp-ball",
+          "qty": 1,
+          "name": "Ball Attachment Denture (2-implant overdenture)"
+        }
+      ],
+      "our_price_usd": 3500,
+      "us_case_midpoint_usd": 9000.0,
+      "net_savings_after_travel_usd": 4600,
+      "savings_pct": 61,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 60,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-crowns-4",
+      "label": "4 Zirconia Crowns",
+      "components": [
+        {
+          "sku": "crn-bruxzir",
+          "qty": 4,
+          "name": "Zirconia Crown / BruxZir"
+        }
+      ],
+      "our_price_usd": 2716,
+      "us_case_midpoint_usd": 8000.0,
+      "net_savings_after_travel_usd": 4384,
+      "savings_pct": 66,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 60,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-veneer-6-comp",
+      "label": "6-Tooth Composite Veneer Case (entry)",
+      "components": [
+        {
+          "sku": "ven-comp-cer",
+          "qty": 6,
+          "name": "Composite Veneer (ceramic finish)"
+        }
+      ],
+      "our_price_usd": 1968,
+      "us_case_midpoint_usd": 6300.0,
+      "net_savings_after_travel_usd": 3432,
+      "savings_pct": 69,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "collateral_pages": [
+        "/lp/no-prep-veneers"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 60,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-implant-graft",
+      "label": "Implant + Bone Graft + Sinus Lift",
+      "components": [
+        {
+          "sku": "imp-single",
+          "qty": 1,
+          "name": "Single Dental Implant (+crown/abutment)"
+        },
+        {
+          "sku": "sur-graft",
+          "qty": 1,
+          "name": "Bone Graft (small area)"
+        },
+        {
+          "sku": "sur-sinus",
+          "qty": 1,
+          "name": "Sinus Lift (per side)"
+        }
+      ],
+      "our_price_usd": 3781,
+      "us_case_midpoint_usd": 7750.0,
+      "net_savings_after_travel_usd": 3069,
+      "savings_pct": 51,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "collateral_pages": [
+        "/implants"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 60,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-bridge-3",
+      "label": "3-Unit Fixed Bridge",
+      "components": [
+        {
+          "sku": "crn-bridge",
+          "qty": 3,
+          "name": "Fixed Bridge (per unit)"
+        }
+      ],
+      "our_price_usd": 2100,
+      "us_case_midpoint_usd": 5250.0,
+      "net_savings_after_travel_usd": 2250,
+      "savings_pct": 60,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 60,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-implant-single",
+      "label": "Single Implant + Crown",
+      "components": [
+        {
+          "sku": "imp-single",
+          "qty": 1,
+          "name": "Single Dental Implant (+crown/abutment)"
+        }
+      ],
+      "our_price_usd": 1744,
+      "us_case_midpoint_usd": 4500.0,
+      "net_savings_after_travel_usd": 1856,
+      "savings_pct": 61,
+      "campaign_tier": 2,
+      "tier_label": "Supporting - bundle or retarget",
+      "collateral_pages": [
+        "/implants"
+      ],
+      "has_collateral": true,
+      "creative_refresh_days": 60,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-rct-crown",
+      "label": "Root Canal + Crown (per tooth)",
+      "components": [
+        {
+          "sku": "end-cracked",
+          "qty": 1,
+          "name": "Cracked Tooth (root canal + crown)"
+        }
+      ],
+      "our_price_usd": 900,
+      "us_case_midpoint_usd": 3000.0,
+      "net_savings_after_travel_usd": 1200,
+      "savings_pct": 70,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-whitening",
+      "label": "In-Office Whitening (standalone)",
+      "components": [
+        {
+          "sku": "cos-whitening",
+          "qty": 1,
+          "name": "In-Office Whitening"
+        }
+      ],
+      "our_price_usd": 300,
+      "us_case_midpoint_usd": 650.0,
+      "net_savings_after_travel_usd": -550,
+      "savings_pct": 54,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": []
+    },
+    {
+      "case_id": "case-fullmouth-srp",
+      "label": "Full-Mouth Deep Cleaning (4 quadrants)",
+      "components": [
+        {
+          "sku": "hyg-deep",
+          "qty": 4,
+          "name": "Deep Cleaning / SRP (per quadrant)"
+        }
+      ],
+      "our_price_usd": 1000,
+      "us_case_midpoint_usd": 1100.0,
+      "net_savings_after_travel_usd": -800,
+      "savings_pct": 9,
+      "campaign_tier": 3,
+      "tier_label": "Local / retention only - not travel-viable",
+      "collateral_pages": [],
+      "has_collateral": false,
+      "creative_refresh_days": 120,
+      "ad_lineage": []
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": "cl-fullarch",
+      "label": "Full-Arch Restoration (All-on-4 / Snap-on / Overdenture)",
+      "cases": [
+        "case-aof-double",
+        "case-aof-single",
+        "case-snap",
+        "case-overdenture"
+      ],
+      "tier": 1,
+      "patient": "55-75, failing or already-missing dentition, currently in or facing full dentures. Often has been quoted $25k-50k domestically and declined.",
+      "intent_signals": [
+        "all on 4 cost",
+        "full mouth dental implants price",
+        "dentures vs implants",
+        "teeth in a day",
+        "dental implant financing denied",
+        "affordable full mouth reconstruction",
+        "dental tourism mexico implants",
+        "cancun dental implants"
+      ],
+      "audience_build": "Intent seed on full-arch implant + denture-replacement terms; layer US homeowners 55-75 with disposable income; exclude existing patients.",
+      "geo": "US nationwide, weight TX/FL/CA/AZ/IL (direct CUN flights + large 55+ population)",
+      "creative_need": "Before/after full-arch cases, Dr. Carolina on-camera credibility, cost-comparison card, travel logistics reassurance.",
+      "refresh_days": 30
+    },
+    {
+      "cluster_id": "cl-cosmetic",
+      "label": "Cosmetic Smile (Veneers / Smile Makeover)",
+      "cases": [
+        "case-makeover",
+        "case-veneer-10-emax",
+        "case-veneer-8-porc",
+        "case-veneer-6-comp"
+      ],
+      "tier": 1,
+      "patient": "28-50, appearance-driven, social/professional trigger (wedding, promotion, divorce, on-camera work). Price-aware but aspiration-led.",
+      "intent_signals": [
+        "veneers cost",
+        "how much are porcelain veneers",
+        "no prep veneers",
+        "smile makeover",
+        "hollywood smile",
+        "composite vs porcelain veneers",
+        "veneers turkey vs mexico",
+        "dental veneers abroad"
+      ],
+      "audience_build": "Intent seed on veneer/smile-makeover terms; layer beauty + aesthetics affinity, recent engagement/wedding signals, creator-economy occupations.",
+      "geo": "US nationwide, weight metro CA/NY/TX/FL/GA",
+      "creative_need": "Close-up before/after, no-drilling differentiator, trial-smile footage, patient testimonial video.",
+      "refresh_days": 30
+    },
+    {
+      "cluster_id": "cl-implant-single",
+      "label": "Single & Multi-Tooth Implants",
+      "cases": [
+        "case-implant-3",
+        "case-implant-single",
+        "case-implant-graft",
+        "case-bridge-3",
+        "case-crowns-4"
+      ],
+      "tier": 2,
+      "patient": "40-65, one or several failing/missing teeth, already treatment-planned by a US dentist and shopping the quote.",
+      "intent_signals": [
+        "dental implant cost per tooth",
+        "bone graft cost",
+        "sinus lift price",
+        "dental bridge vs implant",
+        "second opinion dental quote",
+        "zirconia crown cost"
+      ],
+      "audience_build": "Intent seed on implant + crown/bridge terms; retarget site visitors who hit /implants; lookalike off full-arch converters.",
+      "geo": "US nationwide, weight direct-flight metros",
+      "creative_need": "Single-case story arc, quote-comparison creative, 'bring your treatment plan' offer.",
+      "refresh_days": 60
+    },
+    {
+      "cluster_id": "cl-retention",
+      "label": "Retention / Local (non-travel-viable)",
+      "cases": [
+        "case-rct-crown",
+        "case-whitening",
+        "case-fullmouth-srp"
+      ],
+      "tier": 3,
+      "patient": "Existing patients, local Cancun residents, and expats already in-market.",
+      "intent_signals": [
+        "dentist near me cancun",
+        "teeth cleaning cancun",
+        "emergency dentist cancun"
+      ],
+      "audience_build": "Do NOT run US prospecting. Local geo + existing-patient CRM retargeting only.",
+      "geo": "Cancun / Riviera Maya + expat communities",
+      "creative_need": "Low-production, offer-led, organic-style.",
+      "refresh_days": 120
+    }
+  ],
+  "lineage_rules": {
+    "principle": "Every SKU cluster carries a continuous lineage of creative. A cluster is never left without a live, in-date ad.",
+    "refresh_policy": {
+      "tier_1_days": 30,
+      "tier_2_days": 60,
+      "tier_3_days": 120,
+      "rationale": "Refresh cadence tracks spend concentration and audience overlap. Tier 1 carries the budget, so it fatigues first."
+    },
+    "lineage_record_schema": {
+      "ad_id": "Meta ad id",
+      "creative_id": "Meta creative id",
+      "generation": "int, 1 = first ad ever for this cluster",
+      "parent_ad_id": "ad this iterated from, null for gen 1",
+      "launched": "ISO date",
+      "retired": "ISO date or null",
+      "format": "image | video | carousel",
+      "hook": "first-3-second or headline hook",
+      "visual_subject": "what the image/video actually shows, from creative analysis",
+      "mapped_sku": "sku_id this creative sells",
+      "verdict": "ready | needs-rework | wrong-market | retire"
+    },
+    "health_states": {
+      "current": "live ad younger than the cluster refresh window",
+      "stale": "live ad older than the refresh window - queue a successor",
+      "dark": "cluster has zero live ads - revenue exposure",
+      "no-creative": "cluster has never had an ad"
+    }
+  }
+}
